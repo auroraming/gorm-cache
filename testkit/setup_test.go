@@ -5,12 +5,12 @@ import (
 	"os"
 	"testing"
 
+	"github.com/redis/go-redis/v9"
 	"gorm.io/gorm/logger"
 
-	"github.com/Pacific73/gorm-cache/cache"
+	"github.com/auroraming/gorm-cache/cache"
 
-	"github.com/Pacific73/gorm-cache/config"
-	"github.com/go-redis/redis/v8"
+	"github.com/auroraming/gorm-cache/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
@@ -47,7 +47,7 @@ func TestMain(m *testing.M) {
 	log("test setup ...")
 
 	var err error
-	//logger.Default.LogMode(logger.Info)
+	// logger.Default.LogMode(logger.Info)
 
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local",
 		username, password, ip, port, databaseName)

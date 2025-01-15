@@ -3,8 +3,8 @@ package data_layer
 import (
 	"context"
 
-	"github.com/Pacific73/gorm-cache/config"
-	"github.com/Pacific73/gorm-cache/util"
+	"github.com/auroraming/gorm-cache/config"
+	"github.com/auroraming/gorm-cache/util"
 )
 
 type DataLayerInterface interface {
